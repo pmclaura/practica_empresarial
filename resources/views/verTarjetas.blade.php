@@ -3,8 +3,9 @@
 
 @section('cards')
     <div class="section">
-        <a class="btn btn-info" id="boton">Leer archivos Json</a>
+        <a class="btn btn-success" id="boton">Leer archivos Json</a>
     </div>    
-    <div class="card" style="width:400px"  id="res">
+    <br>
+    <div  class="section" id="res">
     </div>
 @endsection

@@ -11,15 +11,16 @@ function leerDatos(){
             res.innerHTML = '';
             for (let item of datos ){
                 res.innerHTML += `
-               
+                <div class="card" style="width:250px">
                     <img class="card-img-top" src="${item.avatar_url}" alt="Card image" style="width:100%">
-                    <div class="card-body">
+                    <div class="card-body" style="background:#ffffb3">
                         <h4 class="card-title">${item.name}</h4>
-                        <p class="card-text">Nickname: ${item.nickName}</p>
-                        <a href="${item.github_url}" class="btn btn-primary">Profile in Github</a>
+                        <h5 class="card-text">Nickname: ${item.nickName}</h5>
+                        <a href="${item.github_url}" class="btn btn-info">Profile in Github</a>
                     </div>
                     <br>
-                
+                </div>
+                <br>
                 `
             }
         }
